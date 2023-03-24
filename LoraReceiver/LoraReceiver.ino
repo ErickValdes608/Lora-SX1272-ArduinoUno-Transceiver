@@ -3,19 +3,12 @@
 #include <RadioLib.h>
 
 // SX1272 has the following connections:
-//esp32s
-// NSS pin:   15
-// DIO0 pin:  2
-// RESET pin: 22
-// DIO1 pin:  4
 //arduino uno
 // NSS pin:   10
 // DIO0 pin:  2
 // RESET pin: 14
 // DIO1 pin:  3
-
-SX1272 radio = new Module(10, 2, 14, 3); //arduino uno
-//SX1272 radio = new Module(15, 2, 22, 4); // esp32s
+SX1272 radio = new Module(10, 2, 14, 3);
 
 void setup() {
   Serial.begin(9600);
